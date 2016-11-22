@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CombiPlay</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        min-width: 400px;
+        min-height: 100px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="/app/components/app.js"></script>
+    <script src="/app/services/request.js"></script>
+    <script src="/app/services/api/youtube.js"></script>
+  </head>
+  <body>
+    <div id="status"></div>
+    <img id="image-result" hidden>
+  </body>
+</html>
+

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "CombiPlay",
+  "description": "Combinated player for music from Youtube, VK, SoundCloud",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon":  "/icons/logo.png",
+    "default_popup": "/app/panel.html"
+  },
+  "permissions": [
+    "https://ajax.googleapis.com/",
+    "https://accounts.google.com",
+    "https://www.googleapis.com",
+    "identity"
+  ],
+  "content_security_policy": "object-src 'self'; script-src 'self' https://apis.google.com/",
+
+  "youtube_app_key": "set_your_key",
+  "oauth2": {
+    "client_id": "set_your_key",
+    "scopes": [
+      "https://www.googleapis.com/auth/youtube"
+    ]
+  }
+}
