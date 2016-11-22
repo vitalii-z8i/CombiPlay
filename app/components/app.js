@@ -1,8 +1,8 @@
 'use_strict';
 
 App = {
+  manifest: chrome.runtime.getManifest(),
   services: {
-    manifest: chrome.runtime.getManifest(),
 
     api: { /** Endpoints services */ },
     request: null
